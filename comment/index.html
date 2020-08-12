@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Message-box</title>
+    <style>
+        @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+        body{
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif;
+            background: url(./bp.webp) no-repeat;
+            background-size: cover;
+        }
+        #comment-box{
+            width: 280px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+        }
+        #maari{
+            float: left;
+            font-size: 40px;
+            border-bottom: 6px solid #4caf50;
+            margin-bottom: 50px;
+            padding: 13px 0;
+        }
+        .text-box{
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 8px 0;
+            border-bottom: 1px solid #4caf50;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="mailto:varunsiva2004@gmail.com" method="POST">    
+        <div id="comment-box">
+         <h1 id="maari"><b><i>Message</i></b></h1>
+        <div class="text-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <b><i>Name</i>:</b><br>
+             <input type="text" class="input" placeholder="Enter Your Name" name="" value="">
+        </div>
+
+        <div class="text-box">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <label for="email_id"><i><b>Email</i>:</b></label><br>
+                <input type="email" class="input" placeholder="enter your email" name="your email">
+        </div>
+
+        <div class="text-box">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <b><i>Message</i>:</b><br>
+                <textarea name="Comment" class="message" rows="4" cols="28" placeholder="Enter your message"></textarea>
+        </div>
+        <input class="btn" type="submit" name="button" value="Send message" >
+    </div>
+     </form>
+     
+</body>
+</html>
